@@ -3,6 +3,8 @@
 
 #include <QDialog>
 #include <QSettings>
+#include <QDir>
+#include <QTranslator>
 
 namespace Ui {
 class I18nWindow;
@@ -20,8 +22,11 @@ private slots:
 
     void on_btnReload_clicked();
 
+    void on_comboBox_activated(const QString &arg1);
+
 private:
     Ui::I18nWindow *ui;
+    QTranslator* trans;
 
 };
 
