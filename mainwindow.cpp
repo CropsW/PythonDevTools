@@ -12,3 +12,9 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_actioni18n_triggered()
+{
+    I18nWindow* I18nWindow = new class I18nWindow;
+    I18nWindow->exec();
+}
