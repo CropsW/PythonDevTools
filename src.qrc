@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/">
         <file>ico/i18n.png</file>
+        <file>user/config.ini</file>
+        <file>lang/en_US.qm</file>
+        <file>lang/zh_CN.qm</file>
     </qresource>
 </RCC>

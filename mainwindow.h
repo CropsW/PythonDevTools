@@ -2,7 +2,14 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QCoreApplication>
+#include <QTranslator>
+#include <QSettings>
+#include <QDebug>
+#include <QDir>
+#include <QFile>
 #include "i18nwindow.h"
+#include "tool.h"
 
 namespace Ui {
 class MainWindow;
@@ -21,6 +28,9 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QTranslator *trans;
+    QSettings *configRead;
+
 };
 
 #endif // MAINWINDOW_H

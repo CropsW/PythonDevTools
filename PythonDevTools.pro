@@ -27,17 +27,19 @@ CONFIG += c++11
 SOURCES += \
         i18nwindow.cpp \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+        tool.cpp
 
 HEADERS += \
         i18nwindow.h \
-        mainwindow.h
+        mainwindow.h \
+        tool.h
 
 FORMS += \
         i18nwindow.ui \
         mainwindow.ui
 
-TRANSLATIONS += zh_CN.ts en_US.ts
+TRANSLATIONS += trans/zh_CN.ts trans/en_US.ts
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
