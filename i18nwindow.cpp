@@ -12,3 +12,9 @@ I18nWindow::~I18nWindow()
 {
     delete ui;
 }
+
+
+void I18nWindow::on_btnReload_clicked()
+{
+    ui->retranslateUi(this);
+}

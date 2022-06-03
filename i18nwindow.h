@@ -15,6 +15,10 @@ public:
     explicit I18nWindow(QWidget *parent = nullptr);
     ~I18nWindow();
 
+private slots:
+
+    void on_btnReload_clicked();
+
 private:
     Ui::I18nWindow *ui;
 };
